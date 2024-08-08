@@ -1,20 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+// import Home from "./screens/Home";
+import AppNavigation from "./navigation/appNavigation";
+// import { AppRegistry } from "react-native";
+// AppRegistry.registerComponent(appName, () => Home);
+// import React from 'react';
+
+// registerRootComponent(Home);
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+        <AppNavigation></AppNavigation>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
